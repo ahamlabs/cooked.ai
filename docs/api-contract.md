@@ -35,26 +35,26 @@ Description: The core endpoint that takes user preferences (and optional image) 
 {  
   "status": "success",  
   "data": {  
-    "user\_profile": {  
-      "display\_name": "User Name",  
+    "user_profile": {  
+      "display_name": "User Name",  
       "archetype": "The 'I was born in the wrong generation' Guy"  
     },  
     "roast": {  
       "headline": "Your taste is completely derivative.",  
-      "music\_roast": "Listening to \[Artist Name\] in 2024 is practically a cry for help.",  
-      "movie\_roast": "You listed \[Movie Name\] because you saw it on a 'Top 100' list, not because you understood it.",  
-      "visual\_roast": "Your room looks like it smells of stale vape juice and regret. (Optional field)",  
-      "overall\_verdict": "You are the human equivalent of unseasoned chicken."  
+      "music_roast": "Listening to \[Artist Name\] in 2024 is practically a cry for help.",  
+      "movie_roast": "You listed \[Movie Name\] because you saw it on a 'Top 100' list, not because you understood it.",  
+      "visual_roast": "Your room looks like it smells of stale vape juice and regret. (Optional field)",  
+      "overall_verdict": "You are the human equivalent of unseasoned chicken."  
     },  
     "stats": {  
-      "basic\_score": 85,  
-      "red\_flag\_score": 12  
+      "basic_score": 85,  
+      "red_flag_score": 12  
     },  
     "verdict": {  
-      "verdict\_1": "Basic",  
-      "verdict\_2": "No Taste",  
-      "verdict\_3": "Trend Hopper",  
-      "verdict\_4": "Boring"  
+      "verdict_1": "Basic",  
+      "verdict_2": "No Taste",  
+      "verdict_3": "Trend Hopper",  
+      "verdict_4": "Boring"  
     }  
   }  
 }
@@ -69,7 +69,7 @@ Returned when required fields are missing.
 ```
 {  
   "status": "error",  
-  "code": "MISSING\_FIELDS",  
+  "code": "MISSING_FIELDS",  
   "message": "Name and Taste fields are required."  
 }
 ```
@@ -80,7 +80,7 @@ Returned if the user hits the API too frequently (Rate Limiting).
 ```
 {  
   "status": "error",  
-  "code": "RATE\_LIMIT\_EXCEEDED",  
+  "code": "RATE_LIMIT_EXCEEDED",  
   "message": "You are being roasted too hard. Cool off for a minute."  
 }
 ```
@@ -91,7 +91,7 @@ Returned if the AI service fails or times out.
 ```
 {  
   "status": "error",  
-  "code": "AI\_GENERATION\_FAILED",  
+  "code": "AI_GENERATION_FAILED",  
   "message": "The AI refused to roast you. You might be too boring."  
 }
 ```
